@@ -1,6 +1,7 @@
 <template>
   <div 
     class="drop-zone" 
+    data-test="dropzone"
     @dragover.prevent="handleDragOver" 
     @dragleave.prevent="handleDragLeave" 
     @drop.prevent="handleDrop"

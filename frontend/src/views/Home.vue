@@ -19,6 +19,7 @@
         v-if="selectedFile" 
         :file="selectedFile" 
         @remove="removeFile"
+        data-test="file-name"
       />
       
       <!-- Thanh tiến trình -->
@@ -34,6 +35,7 @@
           class="btn btn-primary btn-block" 
           @click="convertFile" 
           :disabled="converting || converted"
+          data-test="convert-button"
         >
           <span class="btn-icon">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -50,6 +52,7 @@
           class="btn btn-success btn-block" 
           @click="downloadCsv" 
           :disabled="!converted"
+          data-test="download-button"
         >
           <span class="btn-icon">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">

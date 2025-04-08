@@ -1,5 +1,5 @@
 <template>
-  <div :class="['alert', `alert-${type}`]">
+  <div :class="['alert', `alert-${type}`]" :data-test="`${type}-message`">
     <div class="alert-icon">
       <svg v-if="type === 'success'" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
